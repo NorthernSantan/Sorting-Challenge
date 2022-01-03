@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/colin/CLionProjects/challenge/main.c
+stdio.h
+-
+stdlib.h
+-
+merge.c
+/cygdrive/c/Users/colin/CLionProjects/challenge/merge.c
+partition.c
+/cygdrive/c/Users/colin/CLionProjects/challenge/partition.c
+
+/cygdrive/c/Users/colin/CLionProjects/challenge/merge.c
+
+/cygdrive/c/Users/colin/CLionProjects/challenge/partition.c
+
