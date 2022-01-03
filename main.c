@@ -10,8 +10,6 @@
     Author : Colin McCormack
     Date : 1/3/2022
 
-    Merge sort time complexity : O(4n) = O(n)
-
  */
 
 #define MAX_NUMS 100
@@ -53,7 +51,7 @@ int main(){
     partition (B, 0, nB);		// define this function
 
     printf ("After partitioning ...\n");
-    outputArray(A, nA);
+    outputArray(B, nA);
     printf ("\n\n");
 
     return 0;

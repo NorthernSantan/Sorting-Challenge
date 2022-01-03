@@ -24,6 +24,8 @@
 
     Merge Sort
 
+    Merge sort time complexity : O(4n) = O(n)
+
     Solution : Iterate over items until one array has reached the end sorting over each, putting the smaller in new array,
     Next, go over and append remaining array elements from each half of the array,
     Finally, copy new array elements to old array

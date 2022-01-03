@@ -34,30 +34,63 @@
 
 */
 
+/*
+
+    Partition logic
+
+    Put the pivot in a location where all elements less than it are before, and all greater are after
+    To do this, I will need a swap function and will move each element rightwards if it is greater than partition
+
+    Start at beginning of array
+        Find an element that is greater than pivot (doesn't belong)
+    Start at end of array
+        Find an element that is less than pivot (doesn't belong)
+
+    Swap them as long as start < end
+
+    Repeat
+
+    The swap current with pivot to put it back into place
+
+ */
+
 void swap (int *a, int *b) {
 
-    int *ptr;
+    int temp;
 
-    ptr = a;
+    temp = *a;
 
-    a = b;
+    *a = *b;
 
-    b = ptr;
+    *b = temp;
 
 }
 
+
 void partition (int *A, int lo, int hi) {
 
+    int pivot = A[lo];
+    int *pPivot = &A[lo];
 
-    /*
+    printf ("Currently in partition function.\n");
+    printf ("Your pivot is : %i\n\n", pivot);
 
-        Partition logic
+    while (lo < hi) {
 
-        Put the pivot in a location where all elements less than it are before, and all greater are after
-        To do this, I will need a swap function and will move each element rightwards if it is greater than partition
+        do {
+            lo++;
+        } while (A[lo] <= pivot);
 
+        do {
+            hi--;
+        } while (A[hi] > pivot);
 
+        if (lo < hi)
+            swap( &(A[lo]), &(A[hi]) );
 
-     */
+    }
+
+    // Remember to put pivot in its place
+    swap ( pPivot, &(A[hi]) );
 
 }
