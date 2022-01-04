@@ -40,15 +40,11 @@ int main(){
                        37, 19, 57, 22, 25, 71};
     int nB = 13;
 
-    // here 68 would be the pivot and since 21, 25, 43, 3, 37, 19, 57
-    // 22 and 25 are all less than 68 then 68 would be moved to index 9
-    // Read the requirements above for the partition function
-
     printf ("Before partitioning ...\n");
     outputArray(B, nB);
     printf ("\n\n");
 
-    partition (B, 0, nB);		// define this function
+    partition (B, 0, nB-1);		// define this function
 
     printf ("After partitioning ...\n");
     outputArray(B, nA);

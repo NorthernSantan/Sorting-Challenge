@@ -2,6 +2,9 @@
 // Created by colin on 1/3/2022.
 //
 
+#include <stdlib.h>
+#include <time.h>
+
 #define MAX_NUMS 100
 
 /*
@@ -38,6 +41,8 @@
 
     Partition logic
 
+    Partition time complexity : Worst (Likely our case since we choose first element as partition) O(n^2), Average case usually approaches O(n log n)
+
     Put the pivot in a location where all elements less than it are before, and all greater are after
     To do this, I will need a swap function and will move each element rightwards if it is greater than partition
 
@@ -68,6 +73,10 @@ void swap (int *a, int *b) {
 
 
 void partition (int *A, int lo, int hi) {
+
+//    // To set random seed of array element as pivot
+//    srand( time(0) );
+//    int pivot = rand() % hi;
 
     int pivot = A[lo];
     int *pPivot = &A[lo];
