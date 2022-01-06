@@ -56,7 +56,7 @@ void merge (int *A, int lo, int mid, int hi){
         B[i++] = A[lo++];
 
     while ( mid < hi ) // while there are remaining items in the second half to be added
-        B[i++] = A[hi++];
+        B[i++] = A[mid++];
 
     for (int i = 0; i < hi; ++i)
         A[i] = B[i];

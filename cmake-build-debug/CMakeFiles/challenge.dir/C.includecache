@@ -6,17 +6,29 @@
 
 #IncludeRegexTransform: 
 
+/cygdrive/c/Users/colin/CLionProjects/challenge/Lib/merge.c
+
+/cygdrive/c/Users/colin/CLionProjects/challenge/Lib/mergeSort.c
+
+/cygdrive/c/Users/colin/CLionProjects/challenge/Lib/partition.c
+stdlib.h
+-
+time.h
+-
+
+/cygdrive/c/Users/colin/CLionProjects/challenge/Lib/quickSort.c
+
 /cygdrive/c/Users/colin/CLionProjects/challenge/main.c
 stdio.h
 -
 stdlib.h
 -
-merge.c
-/cygdrive/c/Users/colin/CLionProjects/challenge/merge.c
-partition.c
-/cygdrive/c/Users/colin/CLionProjects/challenge/partition.c
-
-/cygdrive/c/Users/colin/CLionProjects/challenge/merge.c
-
-/cygdrive/c/Users/colin/CLionProjects/challenge/partition.c
+Lib/merge.c
+/cygdrive/c/Users/colin/CLionProjects/challenge/Lib/merge.c
+Lib/partition.c
+/cygdrive/c/Users/colin/CLionProjects/challenge/Lib/partition.c
+Lib/quickSort.c
+/cygdrive/c/Users/colin/CLionProjects/challenge/Lib/quickSort.c
+Lib/mergeSort.c
+/cygdrive/c/Users/colin/CLionProjects/challenge/Lib/mergeSort.c
 
